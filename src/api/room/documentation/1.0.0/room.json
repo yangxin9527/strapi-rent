@@ -1,5 +1,5 @@
 {
-  "/categories": {
+  "/rooms": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryListResponse"
+                "$ref": "#/components/schemas/RoomListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Category"
+        "Room"
       ],
       "parameters": [
         {
@@ -148,7 +148,7 @@
           }
         }
       ],
-      "operationId": "get/categories"
+      "operationId": "get/rooms"
     },
     "post": {
       "responses": {
@@ -157,7 +157,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryResponse"
+                "$ref": "#/components/schemas/RoomResponse"
               }
             }
           }
@@ -214,23 +214,23 @@
         }
       },
       "tags": [
-        "Category"
+        "Room"
       ],
       "parameters": [],
-      "operationId": "post/categories",
+      "operationId": "post/rooms",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/CategoryRequest"
+              "$ref": "#/components/schemas/RoomRequest"
             }
           }
         }
       }
     }
   },
-  "/categories/{id}": {
+  "/rooms/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -238,7 +238,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryResponse"
+                "$ref": "#/components/schemas/RoomResponse"
               }
             }
           }
@@ -295,7 +295,7 @@
         }
       },
       "tags": [
-        "Category"
+        "Room"
       ],
       "parameters": [
         {
@@ -309,7 +309,7 @@
           }
         }
       ],
-      "operationId": "get/categories/{id}"
+      "operationId": "get/rooms/{id}"
     },
     "put": {
       "responses": {
@@ -318,7 +318,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoryResponse"
+                "$ref": "#/components/schemas/RoomResponse"
               }
             }
           }
@@ -375,7 +375,7 @@
         }
       },
       "tags": [
-        "Category"
+        "Room"
       ],
       "parameters": [
         {
@@ -389,13 +389,13 @@
           }
         }
       ],
-      "operationId": "put/categories/{id}",
+      "operationId": "put/rooms/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/CategoryRequest"
+              "$ref": "#/components/schemas/RoomRequest"
             }
           }
         }
@@ -466,7 +466,7 @@
         }
       },
       "tags": [
-        "Category"
+        "Room"
       ],
       "parameters": [
         {
@@ -480,7 +480,7 @@
           }
         }
       ],
-      "operationId": "delete/categories/{id}"
+      "operationId": "delete/rooms/{id}"
     }
   }
 }

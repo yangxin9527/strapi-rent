@@ -1,5 +1,5 @@
 {
-  "/restaurants": {
+  "/communities": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RestaurantListResponse"
+                "$ref": "#/components/schemas/CommunityListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Restaurant"
+        "Community"
       ],
       "parameters": [
         {
@@ -148,7 +148,7 @@
           }
         }
       ],
-      "operationId": "get/restaurants"
+      "operationId": "get/communities"
     },
     "post": {
       "responses": {
@@ -157,7 +157,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RestaurantResponse"
+                "$ref": "#/components/schemas/CommunityResponse"
               }
             }
           }
@@ -214,23 +214,23 @@
         }
       },
       "tags": [
-        "Restaurant"
+        "Community"
       ],
       "parameters": [],
-      "operationId": "post/restaurants",
+      "operationId": "post/communities",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/RestaurantRequest"
+              "$ref": "#/components/schemas/CommunityRequest"
             }
           }
         }
       }
     }
   },
-  "/restaurants/{id}": {
+  "/communities/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -238,7 +238,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RestaurantResponse"
+                "$ref": "#/components/schemas/CommunityResponse"
               }
             }
           }
@@ -295,7 +295,7 @@
         }
       },
       "tags": [
-        "Restaurant"
+        "Community"
       ],
       "parameters": [
         {
@@ -309,7 +309,7 @@
           }
         }
       ],
-      "operationId": "get/restaurants/{id}"
+      "operationId": "get/communities/{id}"
     },
     "put": {
       "responses": {
@@ -318,7 +318,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RestaurantResponse"
+                "$ref": "#/components/schemas/CommunityResponse"
               }
             }
           }
@@ -375,7 +375,7 @@
         }
       },
       "tags": [
-        "Restaurant"
+        "Community"
       ],
       "parameters": [
         {
@@ -389,13 +389,13 @@
           }
         }
       ],
-      "operationId": "put/restaurants/{id}",
+      "operationId": "put/communities/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/RestaurantRequest"
+              "$ref": "#/components/schemas/CommunityRequest"
             }
           }
         }
@@ -466,7 +466,7 @@
         }
       },
       "tags": [
-        "Restaurant"
+        "Community"
       ],
       "parameters": [
         {
@@ -480,7 +480,7 @@
           }
         }
       ],
-      "operationId": "delete/restaurants/{id}"
+      "operationId": "delete/communities/{id}"
     }
   }
 }
