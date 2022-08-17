@@ -20,7 +20,7 @@
       "type": "richtext"
     },
     "size": {
-      "required": true,
+      "required": false,
       "default": 0,
       "type": "decimal"
     },
@@ -29,12 +29,13 @@
       "default": 0
     },
     "medias": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "communityId": {
       "type": "relation",
